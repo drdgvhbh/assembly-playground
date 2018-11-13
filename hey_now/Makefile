@@ -1,3 +1,7 @@
 build:
-	as hey_now.s -o hey_now.o --32
-	ld hey_now.o -o hey_now -m elf_i386
+	gcc -g -m32 -nostdlib hey_now.s -o hey_now 
+
+run:
+	make build
+	rm -r -f hey_now.txt
+	./hey_now

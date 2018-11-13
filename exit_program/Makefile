@@ -1,3 +1,3 @@
 build:
-	as exit.s -o exit.o
-	ld exit.o -o exit
+	gcc -g -m32 -nostdlib exit.s -o exit 
+	gcc -g -m32 -nostdlib exit.s -o exit 
